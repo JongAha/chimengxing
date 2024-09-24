@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资产管理</title>
+    <link rel="stylesheet" href="/css/assetManagement.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left-column">
+                <div class="title">我的余额</div>
+                <div class="balance">10.00</div>
+                <div class="title">我的积分</div>
+                <div class="points">55.20</div>
+            </div>
+            <div class="right-column">
+                <div class="button-container">
+                    <button class="action-button" onclick="recharge()">充值</button>
+                    <button class="action-button" onclick="give()">赠送</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabbar">
+            <button onclick="switchTab('assetAll')" class="active">全部</button>
+            <button onclick="switchTab('assetExpenses')">支出</button>
+            <button onclick="switchTab('assetIncome')">收入</button>
+        </div>
+
+        <iframe id="asset-content-frame" src="assetAll.html"></iframe>
+    </div>
+
+    <script src="/js/assetManagement.js"></script>
+</body>
+
+</html>

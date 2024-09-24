@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加收货地址</title>
+    <link rel="stylesheet" href="/css/addressAdd.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="region"><span style="color: #eb5d2c;font-size: 18px;">* </span>所在地区</label>
+            <input type="text" id="region" placeholder="请填写所在地区" required>
+        </div>
+        <div class="form-group">
+            <label for="address"><span style="color: #eb5d2c;font-size: 18px;">* </span>详细地址与门牌号</label>
+            <input type="text" id="address" placeholder="请输入详细地址" required>
+        </div>
+        <div class="form-group">
+            <label for="recipient"><span style="color: #eb5d2c;font-size: 18px;">* </span>收货人名字</label>
+            <input type="text" id="recipient" placeholder="请输入收货人姓名" required>
+        </div>
+        <div class="form-group">
+            <label for="phone"><span style="color: #eb5d2c;font-size: 18px;">* </span>手机号</label>
+            <div class="phone-container">
+                <select id="country-code">
+                    <option value="+86" selected>+86</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
+                    <option value="+91">+91</option>
+                    <option value="+81">+81</option>
+                    <!-- 其他国家代码 -->
+                </select>
+                <input type="text" id="phone" placeholder="请输入手机号" required>
+            </div>
+        </div>
+        <div class="form-group default-address">
+            <label>
+                <input type="radio" name="default" id="default-address"> 默认地址
+            </label>
+        </div>
+        <button class="save-button" id="save-button" disabled onclick="saveAddress()">保存地址</button>
+    </div>
+
+    <script src="/js/addressAdd.js"></script>
+</body>
+
+</html>

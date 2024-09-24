@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单页面</title>
+    <link rel="stylesheet" href="/css/order.css">
+</head>
+
+<body>
+    <div class="header">
+        <button class="back-btn" onclick="goBack()">&#60;</button>
+        <input type="text" id="search-input" class="search-box" placeholder="搜索订单">
+        <button class="search-btn" onclick="searchOrder()">搜索</button>
+    </div>
+    <div class="tabs">
+        <div class="tab" onclick="changeTab('orderAll')">全部</div>
+        <div class="tab" onclick="changeTab('pendingPayment')">待付款</div>
+        <div class="tab" onclick="changeTab('pendingDelivery')">待发货</div>
+        <div class="tab" onclick="changeTab('pendingReceipt')">待收货</div>
+        <div class="tab" onclick="changeTab('pendingReview')">待评价</div>
+        <div class="tab" onclick="changeTab('afterSale')">售后</div>
+    </div>
+    <iframe id="order-content-frame" src="" frameborder="0"></iframe>
+
+    <script src="/js/order.js"></script>
+</body>
+
+</html>

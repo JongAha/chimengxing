@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* 页面背景颜色 */
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    /* 确保整个页面高度至少为视口高度 */
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    /* 为固定按钮留出空间 */
+}
+
+.address-card {
+    width: 90%;
+    /* 卡片宽度 */
+    background-color: white;
+    /* 卡片背景为白色 */
+    border-radius: 10px;
+    /* 圆角 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+    padding: 15px;
+    margin-bottom: 15px;
+    /* 卡片间距 */
+    display: flex;
+}
+
+.left-column {
+    flex: 4;
+    /* 占4/5 */
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column {
+    flex: 1;
+    /* 占1/5 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.name-phone {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.default-label {
+    background-color: rgba(255, 166, 0, 0.57);
+    /* 标签背景色 */
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    /* 标签圆角 */
+}
+
+.address {
+    margin: 5px 0;
+}
+
+.detailed-address {
+    color: #666;
+    /* 详细地址颜色 */
+}
+
+.edit-icon {
+    width: 24px;
+    /* 编辑图标大小 */
+    height: auto;
+    cursor: pointer;
+    /* 手指光标 */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* 左右对齐 */
+    padding: 10px 20px;
+    /* 底部按钮的内边距 */
+    background-color: white;
+    /* 底部背景色 */
+    border-top: 1px solid #ddd;
+    /* 上边框 */
+    position: fixed;
+    /* 固定在底部 */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+.footer-button {
+    background-color: #ddddddbc;
+    width: 30vw;
+    color: black;
+    /* 按钮文字颜色 */
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.add-button {
+    background-color: #f1c601;
+    /* 按钮背景色 */
+    color: black;
+    /* 按钮文字颜色 */
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    /* 圆角 */
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.add-button {
+    flex: 1;
+    /* 占满剩余空间 */
+    margin-left: 10px;
+    /* 按钮间距 */
+}

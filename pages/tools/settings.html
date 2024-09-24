@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置页面</title>
+    <link rel="stylesheet" href="/css//settings.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" onclick="handleClick('avatar')">
+            <div class="label">头像</div>
+            <img src="/imgs/head.jpg" alt="头像" class="icon head">
+        </div>
+        <div class="item" onclick="handleClick('nickname')">
+            <div class="label">昵称</div>
+            <img src="/imgs/edit.png" alt="编辑" class="icon">
+        </div>
+        <div class="item" onclick="handleClick('realname')">
+            <div class="label">真实姓名</div>
+            <img src="/imgs/edit.png" alt="编辑" class="icon">
+        </div>
+        <div class="item" onclick="handleClick('loginPassword')">
+            <div class="label">登录密码</div>
+            <div class="link">点击修改&gt;</div>
+        </div>
+        <div class="item" onclick="handleClick('paymentPassword')">
+            <div class="label">支付密码</div>
+            <div class="link">点击修改&gt;</div>
+        </div>
+        <div class="item">
+            <div class="label">客服热线</div>
+            <div class="info">17305237829</div>
+        </div>
+        <div class="item">
+            <div class="label">备案信息</div>
+            <div class="info">蜀ICP备2023039673号</div>
+        </div>
+        <div class="item">
+            <div class="label">当前版本</div>
+            <div class="info">1.1.5</div>
+        </div>
+
+        <div class="address">
+            <p>公司地址：中国（四川）自由贸易试验区成都高新区府城大道西段399号7栋3单元3层307号</p>
+        </div>
+
+        <button class="button save" onclick="handleClick('save')">保存修改</button>
+        <button class="button logout" onclick="handleClick('logout')">退出登录</button>
+    </div>
+
+    <script src="/js/settings.js"></script>
+</body>
+
+</html>

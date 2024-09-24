@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F5F8;
+}
+
+.section1 {
+    background-image: url('/imgs/mineBg.png');
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5vh;
+}
+
+.title {
+    margin-top: 5vh;
+    font-size: 24px;
+    color: #000000;
+}
+
+.info-row {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.left {
+    flex: 1;
+}
+
+.middle {
+    flex: 4;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.right {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+.stats-row {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* 头像占位 */
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.id {
+    margin-top: 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    background-color: #FDD105;
+    height: 20px;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.toggle-button img {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat img {
+    width: 40px;
+    height: 25px;
+}
+
+
+
+.section2 {
+    width: 80vw;
+    height: 1vh;
+    background-image: url('/imgs/rankBg.png');
+    background-size: fill;
+    background-position: center;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    padding: 20px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.section2-content {
+    display: flex;
+    align-items: center;
+}
+
+.section2-image {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.section2-text {
+    background-color: #f1cf7c;
+    width: 30px;
+    text-align: center;
+    margin-left: 10px;
+    color: #b0841a;
+    border-radius: 10px;
+}
+
+.section3 {
+    padding: 20px 20px 0 20px;
+    background-color: #fff;
+    margin: 15px 15px 0 15px;
+    border-radius: 10px;
+}
+
+.section3-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-all {
+    background: none;
+    border: none;
+    color: #abb0c0;
+    cursor: pointer;
+}
+
+.section3-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-top: 2px solid #f4f5f8;
+    align-items: center;
+}
+
+.order-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.order-item img {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.order-item p {
+    margin-top: 10px;
+    color: #000;
+}
+
+
+
+.section4 {
+    padding: 20px 20px 0 20px;
+    background-color: #fff;
+    margin: 15px 15px 0 15px;
+    border-radius: 10px;
+}
+
+.section4-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section4-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-top: 2px solid #f4f5f8;
+    align-items: center;
+}
+
+.tool-item {
+    width: 23%;
+    /* 四列布局 */
+    text-align: center;
+    margin: 1%;
+    /* 间距 */
+    cursor: pointer;
+}
+
+.tool-item img {
+    height: 35px;
+    width: 35px;
+}

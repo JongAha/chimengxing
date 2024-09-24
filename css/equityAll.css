@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* 页面背景颜色 */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 居中对齐 */
+}
+
+.item {
+    width: 85%;
+    /* 每条数据占宽度的85% */
+    display: flex;
+    justify-content: space-between;
+    /* 左右分布 */
+    align-items: center;
+    /* 垂直居中 */
+    padding: 15px;
+    border-bottom: 1px solid #e2e1e1;
+    /* 下边框 */
+}
+
+.left-column {
+    flex: 1;
+    /* 左边占据剩余空间 */
+}
+
+.description {
+    font-weight: bold;
+    /* 加粗 */
+    font-size: 16px;
+    /* 字体大小 */
+    margin-bottom: 5px;
+    /* 下间距 */
+}
+
+.remark {
+    font-size: 12px;
+    /* 备注字体稍小 */
+    color: rgba(0, 0, 0, 0.6);
+    /* 备注颜色稍浅 */
+    margin-left: 5px;
+}
+
+.time {
+    font-size: 12px;
+    /* 时间字体大小 */
+    color: rgba(0, 0, 0, 0.6);
+    /* 时间颜色稍浅 */
+    margin-top: 10px;
+}
+
+.right-column {
+    flex: 0 0 100px;
+    /* 右边固定宽度 */
+    display: flex;
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+}
+
+.income {
+    color: #14a758;
+    /* 金额颜色为绿色 */
+    font-size: 18px;
+    /* 金额字体大小 */
+    font-weight: bold;
+    /* 加粗 */
+}
+
+.exchange {
+    color: #fd4543;
+    /* 金额颜色为绿色 */
+    font-size: 18px;
+    /* 金额字体大小 */
+    font-weight: bold;
+    /* 加粗 */
+}

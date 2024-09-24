@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* 页面背景颜色 */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    /* 宽度占屏幕的80% */
+    margin: 20px auto;
+    /* 上下居中，左右自动 */
+}
+
+.form-group {
+    margin-bottom: 30px;
+    /* 下间距 */
+}
+
+label {
+    display: block;
+    /* 标签占一行 */
+    margin-bottom: 10px;
+    /* 下间距 */
+    color: #333333e2;
+    /* 标签字体颜色 */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    /* 输入框宽度100% */
+    padding: 10px;
+    /* 内边距 */
+    border: 1px solid #ccc;
+    /* 边框 */
+    border-radius: 5px;
+    /* 圆角 */
+    box-sizing: border-box;
+    /* 使宽度包括内边距 */
+}
+
+input:focus {
+    border-color: #fede33;
+    outline: none;
+    /* 可选，去掉默认的外边框 */
+}
+
+.captcha-container {
+    display: flex;
+    /* 使用 flexbox 布局 */
+}
+
+.captcha-container input {
+    flex: 2;
+    /* 输入框占2/3 */
+    margin-right: 5px;
+    /* 右边距 */
+}
+
+.captcha-button {
+    flex: 1;
+    /* 按钮占1/3 */
+    background-color: #fede33;
+    /* 按钮背景色 */
+    border: none;
+    /* 无边框 */
+    border-radius: 5px;
+    /* 圆角 */
+    padding: 10px;
+    cursor: pointer;
+    /* 手指光标 */
+}
+
+.submit-button {
+    width: 100%;
+    /* 按钮宽度100% */
+    background-color: #fede33;
+    /* 确认设置按钮颜色 */
+    color: black;
+    /* 字体颜色 */
+    border: none;
+    /* 无边框 */
+    border-radius: 5px;
+    /* 圆角 */
+    padding: 15px;
+    cursor: pointer;
+    /* 手指光标 */
+    margin-top: 20px;
+    /* 上边距 */
+    font-size: 16px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机端页面</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="content">
+        <iframe id="home-content-frame" src="/pages/home/index.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="navbar">
+        <div class="nav-item" onclick="activateTab('home', 'imgs/home-icon-active.png', 'imgs/home-icon.png', 'pages/home/index.html')">
+            <img src="imgs/home-icon.png" alt="主页" class="nav-icon" id="home-icon">
+            <span class="nav-text" id="home-text">主页</span>
+        </div>
+        <div class="nav-item" onclick="activateTab('category', 'imgs/category-icon-active.png', 'imgs/category-icon.png', 'pages/category/index.html')">
+            <img src="imgs/category-icon.png" alt="分类" class="nav-icon" id="category-icon">
+            <span class="nav-text" id="category-text">分类</span>
+        </div>
+        <div class="nav-item" onclick="activateTab('cart', 'imgs/cart-icon-active.png', 'imgs/cart-icon.png', 'pages/cart/index.html')">
+            <img src="imgs/cart-icon.png" alt="购物车" class="nav-icon" id="cart-icon">
+            <span class="nav-text" id="cart-text">购物车</span>
+        </div>
+        <div class="nav-item" onclick="activateTab('mine', 'imgs/mine-icon-active.png', 'imgs/mine-icon.png', 'pages/mine/index.html')">
+            <img src="imgs/mine-icon.png" alt="我的" class="nav-icon" id="mine-icon">
+            <span class="nav-text" id="mine-text">我的</span>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

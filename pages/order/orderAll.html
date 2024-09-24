@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单页面</title>
+    <link rel="stylesheet" href="/css/orderAll.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="order-card">
+            <div class="row status">
+                <div class="store-name">电动车直营店</div>
+                <div class="transaction-success">交易成功</div>
+            </div>
+            <div class="row details">
+                <div class="image">
+                    <img src="/imgs/car.png" alt="电动车">
+                </div>
+                <div class="info">
+                    <div class="title">驰梦行电动车</div>
+                    <div class="subtitle">订购后D+3享受相应收益</div>
+                </div>
+                <div class="price-info">
+                    <div class="amount">￥800.00</div>
+                    <div class="quantity">x1</div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="more-button">更多</div>
+                <div class="action-buttons">
+                    <button class="action-button" onclick="utilsButton(0)">退款/售后</button>
+                    <button class="action-button"  onclick="utilsButton(3)">去评价</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="row status">
+                <div class="store-name">电动车直营店</div>
+                <div class="transaction-delivery">待发货</div>
+            </div>
+            <div class="row details">
+                <div class="image">
+                    <img src="/imgs/car.png" alt="电动车">
+                </div>
+                <div class="info">
+                    <div class="title">驰梦行电动车</div>
+                    <div class="subtitle">订购后D+3享受相应收益</div>
+                </div>
+                <div class="price-info">
+                    <div class="amount">￥1600.00</div>
+                    <div class="quantity">x2</div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="more-button">更多</div>
+                <div class="action-buttons">
+                    <button class="action-button" onclick="utilsButton(0)">退款/售后</button>
+                    <button class="action-button" onclick="utilsButton(1)">催发货</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="row status">
+                <div class="store-name">电动车直营店</div>
+                <div class="transaction-success">交易成功</div>
+            </div>
+            <div class="row details">
+                <div class="image">
+                    <img src="/imgs/car.png" alt="电动车">
+                </div>
+                <div class="info">
+                    <div class="title">驰梦行电动车</div>
+                    <div class="subtitle">订购后D+3享受相应收益</div>
+                </div>
+                <div class="price-info">
+                    <div class="amount">￥1600.00</div>
+                    <div class="quantity">x2</div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="more-button">更多</div>
+                <div class="action-buttons">
+                    <button class="action-button" onclick="utilsButton(0)">退款/售后</button>
+                    <button class="action-button" onclick="utilsButton(3)">去评价</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="row status">
+                <div class="store-name">电动车直营店</div>
+                <div class="transaction-payment">待付款</div>
+            </div>
+            <div class="row details">
+                <div class="image">
+                    <img src="/imgs/car.png" alt="电动车">
+                </div>
+                <div class="info">
+                    <div class="title">驰梦行电动车</div>
+                    <div class="subtitle">订购后D+3享受相应收益</div>
+                </div>
+                <div class="price-info">
+                    <div class="amount">￥800.00</div>
+                    <div class="quantity">x1</div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="more-button">更多</div>
+                <div class="action-buttons">
+                    <button class="action-button" onclick="utilsButton(0)">退款/售后</button>
+                    <button class="action-button" onclick="utilsButton(4)">去支付</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="row status">
+                <div class="store-name">电动车直营店</div>
+                <div class="transaction-receipt">待收货</div>
+            </div>
+            <div class="row details">
+                <div class="image">
+                    <img src="/imgs/car.png" alt="电动车">
+                </div>
+                <div class="info">
+                    <div class="title">驰梦行电动车</div>
+                    <div class="subtitle">订购后D+3享受相应收益</div>
+                </div>
+                <div class="price-info">
+                    <div class="amount">￥1600.00</div>
+                    <div class="quantity">x2</div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="more-button">更多</div>
+                <div class="action-buttons">
+                    <button class="action-button" onclick="utilsButton(0)">退款/售后</button>
+                    <button class="action-button" onclick="utilsButton(2)">确认收货</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="row status">
+                <div class="store-name">电动车直营店</div>
+                <div class="transaction-afterSale">已退款</div>
+            </div>
+            <div class="row details">
+                <div class="image">
+                    <img src="/imgs/car.png" alt="电动车">
+                </div>
+                <div class="info">
+                    <div class="title">驰梦行电动车</div>
+                    <div class="subtitle">订购后D+3享受相应收益</div>
+                </div>
+                <div class="price-info">
+                    <div class="amount">￥800.00</div>
+                    <div class="quantity">x1</div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="more-button">更多</div>
+                <div class="action-buttons">
+                    <button class="action-button"  onclick="utilsButton(5)">查看详情</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/orderAll.js"></script>
+</body>
+
+</html>

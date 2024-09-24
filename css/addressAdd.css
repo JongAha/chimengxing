@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* 页面背景颜色 */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    /* 宽度占屏幕的90% */
+    margin: 20px auto;
+    /* 上下居中，左右自动 */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* 下间距 */
+}
+
+label {
+    display: block;
+    /* 标签占一行 */
+    margin-bottom: 5px;
+    /* 下间距 */
+    color: #333;
+    /* 标签字体颜色 */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    /* 输入框宽度100% */
+    padding: 10px;
+    /* 内边距 */
+    border: none;
+    /* 无边框 */
+    border-radius: 5px;
+    /* 圆角 */
+    box-sizing: border-box;
+    /* 使宽度包括内边距 */
+}
+
+input:focus {
+    outline: none;
+    /* 去除焦点时的外边框 */
+    border-bottom: 1px solid #fede33;
+    border-radius: 0;
+    /* 焦点时的阴影效果 */
+}
+
+.phone-container {
+    display: flex;
+    /* 使用 flexbox 布局 */
+}
+
+.phone-container select {
+    width: 20%;
+    /* 下拉框占1/5宽度 */
+    margin-right: 10px;
+    /* 右边距 */
+}
+
+.default-address {
+    display: flex;
+    justify-content: flex-end;
+    /* 右对齐 */
+}
+
+.save-button {
+    width: 100%;
+    /* 按钮宽度100% */
+    background-color: #fede33;
+    /* 按钮颜色 */
+    color: white;
+    /* 字体颜色 */
+    border: none;
+    /* 无边框 */
+    border-radius: 5px;
+    /* 圆角 */
+    padding: 15px;
+    cursor: pointer;
+    /* 手指光标 */
+    margin-top: 20px;
+    /* 上边距 */
+}
+
+.save-button:disabled {
+    background-color: #ccc;
+    /* 禁用状态颜色 */
+    cursor: not-allowed;
+    /* 禁用光标 */
+}

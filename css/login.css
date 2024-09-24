@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* 页面背景颜色 */
+    font-family: Arial, sans-serif;
+    position: relative;
+    /* 使斜线定位 */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /* 充满全屏高度 */
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    justify-content: center;
+    /* 水平居中 */
+    flex-direction: column;
+    /* 垂直布局 */
+}
+
+.diagonal-line {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    /* 填满高度 */
+    background-color: #fede33;
+    /* 斜线颜色 */
+    transform: skewY(-10deg);
+    /* 斜线效果 */
+    top: 0;
+    right: 0;
+    /* 右上角 */
+}
+
+.form-container {
+    width: 90%;
+    /* 表单宽度 */
+    max-width: 400px;
+    /* 最大宽度 */
+    padding: 20px;
+    /* 内边距 */
+    background-color: white;
+    /* 背景颜色 */
+    border-radius: 10px;
+    /* 圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* 垂直居中 */
+    margin-bottom: 20px;
+    /* 下间距 */
+}
+
+.logo img {
+    width: 50px;
+    /* logo宽度 */
+    height: 50px;
+    /* logo高度 */
+    margin-right: 10px;
+    /* 右边距 */
+}
+
+.form-group {
+    display: flex;
+    /* 使用flexbox布局 */
+    align-items: center;
+    /* 垂直居中 */
+    margin-bottom: 15px;
+    /* 下间距 */
+}
+
+.icon {
+    width: 20px;
+    /* 图标宽度 */
+    height: 20px;
+    /* 图标高度 */
+    margin-right: 10px;
+    /* 右边距 */
+}
+
+input[type="text"],
+input[type="password"] {
+    flex: 1;
+    /* 输入框占据剩余空间 */
+    padding: 10px;
+    /* 内边距 */
+    border: none;
+    /* 无边框 */
+    border-bottom: 1px solid #ccc;
+    /* 下边框 */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    /* 去掉默认的聚焦样式 */
+    border-bottom: 1px solid #fede33;
+    /* 聚焦时底部边框颜色 */
+}
+
+.login-button {
+    width: 100%;
+    /* 按钮宽度100% */
+    background-color: #fede33;
+    /* 按钮颜色 */
+    color: white;
+    /* 字体颜色 */
+    border: none;
+    /* 无边框 */
+    border-radius: 5px;
+    /* 圆角 */
+    padding: 15px;
+    cursor: pointer;
+    /* 手指光标 */
+    margin-top: 20px;
+    /* 上边距 */
+}
+
+.agreement {
+    margin: 15px 0;
+    /* 上下间距 */
+    text-align: center;
+    /* 居中 */
+}
+
+.register-login {
+    text-align: center;
+    /* 居中 */
+}
+
+.register-login a {
+    color: #fede33;
+    /* 链接颜色 */
+}

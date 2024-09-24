@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* 页面背景颜色 */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 居中对齐 */
+}
+
+.item {
+    width: 90%;
+    /* 每条数据占宽度的90% */
+    display: flex;
+    justify-content: space-between;
+    /* 左右分布 */
+    align-items: center;
+    /* 垂直居中 */
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    /* 下边框 */
+}
+
+.label {
+    color: #000000;
+    /* 较深的字体颜色 */
+    font-size: 16px;
+    /* 字体大小 */
+    font-weight: 500;
+}
+.item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.head{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+}
+.icon,
+.link ,
+.info {
+    color: #999;
+    /* 较浅的字体颜色 */
+}
+
+.link {
+    cursor: pointer;
+    /* 手指光标 */
+}
+
+.address {
+    width: 90%;
+    /* 地址宽度 */
+    background-color: #f8f6f7;
+    /* 背景颜色 */
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    /* 居中对齐 */
+    word-wrap: break-word;
+    /* 自动换行 */
+}
+
+.button {
+    width: 90%;
+    /* 按钮宽度 */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    /* 圆角 */
+    margin: 10px 0;
+    cursor: pointer;
+    /* 手指光标 */
+}
+
+.save {
+    background-color: #e0f7fa;
+    /* 保存按钮颜色 */
+    color: rgba(0, 0, 255, 0.605);
+    /* 字体颜色 */
+}
+
+.logout {
+    background-color: #ffe0e0;
+    /* 退出按钮颜色 */
+    color: red;
+    /* 字体颜色 */
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置支付密码</title>
+    <link rel="stylesheet" href="/css/settingPayPwd.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="phone">手机号</label>
+            <input type="text" id="phone" placeholder="请输入手机号" required>
+        </div>
+        <div class="form-group">
+            <label for="new-password">新密码</label>
+            <input type="password" id="new-password" placeholder="请输入新密码" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">再次输入新密码</label>
+            <input type="password" id="confirm-password" placeholder="请再次输入新密码" required>
+        </div>
+        <div class="form-group">
+            <label for="captcha">验证码</label>
+            <div class="captcha-container">
+                <input type="text" id="captcha" placeholder="请输入验证码" required>
+                <button class="captcha-button" onclick="sendCaptcha()">发送验证码</button>
+            </div>
+        </div>
+        <button class="submit-button" onclick="confirmSetting()">确认设置</button>
+    </div>
+
+    <script src="/js/settingPayPwd.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资产管理</title>
+    <link rel="stylesheet" href="/css/equityExchange.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left-column">
+                <div class="title">总兑换股权</div>
+                <div class="balance">5500.00</div>
+                <div class="title">已兑换股权</div>
+                <div class="points">200.00</div>
+            </div>
+            <div class="right-column">
+                <div class="topRow">
+                    <div class="money">￥5</div>
+                </div>
+                <div class="bottomRow">
+                    <div class="button-container">
+                        <button class="action-button" onclick="exchange()">兑换</button>
+                        <button class="action-button" onclick="give()">转赠</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabbar">
+            <button onclick="switchTab('equityAll')" class="active">全部</button>
+            <button onclick="switchTab('equityExpenses')">支出</button>
+            <button onclick="switchTab('equityIncome')">收入</button>
+        </div>
+
+        <iframe id="equity-content-frame" src="equityAll.html"></iframe>
+    </div>
+
+    <script src="/js/equityExchange.js"></script>
+</body>
+
+</html>

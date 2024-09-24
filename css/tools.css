@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.back-btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 0;
+    background-color: #ffffff;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 20px 10px 0px;
+    font-weight: 600;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 60px);
+    /* 60px 是 header 的高度 */
+    border: none;
+}

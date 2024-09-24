@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收货地址页面</title>
+    <link rel="stylesheet" href="/css/address.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="address-card">
+            <div class="left-column">
+                <div class="info">
+                    <div class="name-phone">刘先生 13589359284</div>
+                    <span class="default-label">默认</span>
+                </div>
+                <div class="address">四川省 成都市 金牛区 驷马桥街道</div>
+                <div class="detailed-address">马鞍北路北城花园1-2</div>
+            </div>
+            <div class="right-column">
+                <img src="/imgs/edit.png" alt="编辑" class="edit-icon" onclick="editAddress()">
+            </div>
+        </div>
+        <div class="address-card">
+            <div class="left-column">
+                <div class="info">
+                    <div class="name-phone">刘先生 13589359284</div>
+                </div>
+                <div class="address">四川省 成都市 成华区 猛追湾街道</div>
+                <div class="detailed-address">一环路东段北城花园1-2</div>
+            </div>
+            <div class="right-column">
+                <img src="/imgs/edit.png" alt="编辑" class="edit-icon" onclick="editAddress()">
+            </div>
+        </div>
+        <div class="address-card">
+            <div class="left-column">
+                <div class="info">
+                    <div class="name-phone">刘先生 13589359284</div>
+                </div>
+                <div class="address">四川省 成都市 新都区 大丰街道</div>
+                <div class="detailed-address">蒲家二路北城花园1-2</div>
+            </div>
+            <div class="right-column">
+                <img src="/imgs/edit.png" alt="编辑" class="edit-icon" onclick="editAddress()">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="footer-button" onclick="manageAddresses()">管理</button>
+        <button class="add-button" onclick="addAddress()">+ 添加收货地址</button>
+    </div>
+
+    <script src="/js/address.js"></script>
+</body>
+
+</html>
