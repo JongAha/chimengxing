@@ -6,7 +6,7 @@ body {
     /* 设置页面背景色 */
     display: flex;
     justify-content: center;
-    background: url(/imgs/registerBg.jpg);
+    background: url(../imgs/registerBg.jpg);
     align-items: center;
     height: 100vh;
     /* 使页面内容垂直居中 */

@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    background-image: url('/imgs/homeBg.png');
+    background-image: url('../imgs/homeBg.png');
     /* 替换为你的背景图 */
     background-size: cover;
     /* 保持图片宽度适配，不裁剪 */
