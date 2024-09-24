@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的粉丝</title>
+    <link rel="stylesheet" href="../../css/myFollowers.css">
 </head>
+
 <body>
-    <h1>我的粉丝页面</h1>
+    <div class="top-box">
+        <div class="card">
+            <div class="left-column">
+                <div class="points">我的积分</div>
+                <div class="points-value">2392.00</div>
+            </div>
+            <div class="right-column">
+                <button class="withdraw-button" onclick="withdraw()">立即提现</button>
+            </div>
+        </div>
+    </div>
+    <div class="list">
+        <div class="list-item" style="margin-bottom: 10px;" onclick="navigateToCommunity()">
+            <img src="../../imgs/community-icon.png" alt="社区" class="icon">
+            <span class="list-text">社区列表</span>
+            <span class="arrow">&gt;</span>
+        </div>
+        <div class="list-item" onclick="navigateToWithdraw()">
+            <img src="../../imgs/wallet-icon.png" alt="提现" class="icon">
+            <span class="list-text">提现列表</span>
+            <span class="arrow">&gt;</span>
+        </div>
+    </div>
+    <script src="../../js/myFollowers.js"></script>
 </body>
+
 </html>

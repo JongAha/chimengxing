@@ -1,5 +1,5 @@
 function goBack() {
-    window.location.href = `/index.html?tab=${encodeURIComponent('mine')}&url=${encodeURIComponent('/pages/mine/index.html')}`;
+    window.location.href = `../../index.html?tab=${encodeURIComponent('mine')}&url=${encodeURIComponent('/pages/mine/index.html')}`;
 }
 
 window.onload = function () {
@@ -12,5 +12,5 @@ window.onload = function () {
     document.getElementById('page-title').innerText = pageTitle;
 
     // 加载 iframe 内容
-    document.getElementById('tools-content-frame').src = pageUrl;
+    document.getElementById('tools-content-frame').src = `./${pageUrl}`;
 }

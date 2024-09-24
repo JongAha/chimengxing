@@ -5,7 +5,7 @@ body {
     /* 页面背景颜色 */
     font-family: Arial, sans-serif;
     position: relative;
-    /* 使斜线定位 */
+    background: url('../imgs/registerBg.jpg');
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
     /* 填满高度 */
     background-color: #fede33;
     /* 斜线颜色 */
-    transform: skewY(-10deg);
+    transform: skewY(-45deg);
     /* 斜线效果 */
     top: 0;
     right: 0;
@@ -36,25 +36,23 @@ body {
 }
 
 .form-container {
-    width: 90%;
+    width: 80%;
     /* 表单宽度 */
     max-width: 400px;
     /* 最大宽度 */
-    padding: 20px;
+    padding: 50px 30px;
     /* 内边距 */
-    background-color: white;
+    background-color: #ffffffa2;
     /* 背景颜色 */
     border-radius: 10px;
     /* 圆角 */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* 阴影效果 */
 }
 
 .logo {
     display: flex;
     align-items: center;
     /* 垂直居中 */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     /* 下间距 */
 }
 
@@ -95,6 +93,7 @@ input[type="password"] {
     /* 无边框 */
     border-bottom: 1px solid #ccc;
     /* 下边框 */
+    background-color: transparent;
 }
 
 input[type="text"]:focus,
@@ -119,7 +118,7 @@ input[type="password"]:focus {
     padding: 15px;
     cursor: pointer;
     /* 手指光标 */
-    margin-top: 20px;
+    margin: 30px 0;
     /* 上边距 */
 }
 
@@ -128,8 +127,14 @@ input[type="password"]:focus {
     /* 上下间距 */
     text-align: center;
     /* 居中 */
+    font-size: 16px;
+    color: #ccc;
 }
 
+a{
+    text-decoration: none;
+    color: #fede33;
+}
 .register-login {
     text-align: center;
     /* 居中 */

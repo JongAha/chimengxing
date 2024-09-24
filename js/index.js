@@ -20,7 +20,7 @@ function activateTab(tab, activeIcon, inactiveIcon, url) {
 
 
     // 更新iframe的src
-    document.getElementById('home-content-frame').src = url;
+    document.getElementById('home-content-frame').src = `./${url}`;
     
     tabs.forEach(t => {
         const navItem = document.getElementById(`${t}-icon`).parentElement;

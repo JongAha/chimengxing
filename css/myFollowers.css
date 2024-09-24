@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f8;
+}
+
+.top-box {
+    position: relative;
+    height: 20vh;
+    background-image: url('../imgs/myFollowerBg.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin-top: 30px;
+    height: 15vh;
+    background-image: url('../imgs/cardBg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.points {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.points-value {
+    font-size: 26px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.withdraw-button {
+    background-color: #000000;
+    color: #fdc501;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.list {
+    margin-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) */
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    /* border-bottom: 1px solid #ddd; */
+    cursor: pointer;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.list-text {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.arrow {
+    font-size: 18px;
+    color: #888;
+}

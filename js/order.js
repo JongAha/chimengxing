@@ -10,7 +10,7 @@ window.onload = function() {
     changeTab(pageTab);
 
     // Update the content
-    document.getElementById('order-content-frame').src = pageUrl;
+    document.getElementById('order-content-frame').src = `./${pageUrl}`;
 }
 function changeTab(tab) {
 
@@ -45,7 +45,7 @@ function tabNameMapping(tab) {
 }
 
 function goBack() {
-    window.location.href = `/index.html?tab=${encodeURIComponent('mine')}&url=${encodeURIComponent('/pages/mine/index.html')}`;
+    window.location.href = `../../index.html?tab=${encodeURIComponent('mine')}&url=${encodeURIComponent('/pages/mine/index.html')}`;
 }
 
 function searchOrder() {
