@@ -199,9 +199,10 @@ body {
 .section4-body {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 15px;
     border-top: 2px solid #f4f5f8;
     align-items: center;
+    padding-top: 15px;
 }
 
 .tool-item {

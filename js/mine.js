@@ -16,6 +16,4 @@ function navigateToOrder(url,index) {
 function navigateToTools(url,index) {
     const title = ["我的地址", "分享","资产管理","兑换股权","设置","我的粉丝"];
     window.top.location.href = `../tools/index.html?title=${encodeURIComponent(title[index])}&url=${encodeURIComponent(url)}`;
-    // window.top.location.href = page;
-   
 }

@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #fefefe;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.order-amount {
+    color: red;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.gray-text {
+    color: #888;
+}
+
+.order-quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantityLeft {
+    flex: 2;
+}
+
+.quantityRight {
+    flex: 1;
+}
+
+.triangle {
+    color: #ffdf36;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.triangle.left {
+    margin-right: 5px;
+}
+
+.triangle.right {
+    margin-left: 5px;
+}
+
+#quantity {
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: #ffdf36;
+    background-color: #fff;
+}
+
+.payment-ratio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.payment-ratio input {
+    width: calc(40% - 20px);
+    /* Adjust width to maintain 2:1:2 ratio */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-icon {
+    width: 20px;
+    /* Adjust as needed */
+    height: 20px;
+    /* Adjust as needed */
+}
+
+.security-password {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.passwordLeft {
+    flex: 1;
+}
+
+.passwordRight {
+    flex: 2
+}
+
+#password {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffdf36;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.warning-text {
+    color: red;
+    font-size: 16px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: #f9f6f7;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #fede33;
+    /* 聚焦时底部边框颜色 */
+}

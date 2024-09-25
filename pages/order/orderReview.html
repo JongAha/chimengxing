@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评价页面</title>
+    <link rel="stylesheet" href="../../css/orderReview.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 第一行：可点击的框 -->
+        <div class="image-container" id="imageContainer">
+            <img id="selectedImage" src="../../imgs/addPicture-icon.png" alt="添加图片" class="placeholder">
+            <p class="image-text">添加图片</p>
+        </div>
+
+        <!-- 第二行：大的输入框 -->
+        <textarea id="evaluationInput" maxlength="100" placeholder="请输入您的评价..."></textarea>
+
+        <!-- 第三行：图片和文字 -->
+        <div class="product-info">
+            <img src="../../imgs/car.png" alt="驰梦行电动车" class="product-image">
+            <p class="product-name">驰梦行电动车 x1</p>
+        </div>
+
+        <!-- 第四行：综合评价和星星 -->
+        <div class="rating">
+            <p class="rating-text">综合评价</p>
+            <div class="stars" id="stars">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+            </div>
+        </div>
+
+        <!-- 第五行：分享到评价和发布按钮 -->
+        <div class="share-and-submit">
+            <p class="share-text">分享到评价</p>
+            <button class="submit-btn" id="submitBtn"><img src="../../imgs/send-icon.png" alt="">发布</button>
+        </div>
+    </div>
+    <script src="../../js/orderReview.js"></script>
+</body>
+
+</html>

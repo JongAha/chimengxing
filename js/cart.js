@@ -1,3 +1,12 @@
+// 全选功能
+document.getElementById('selectAllCheckbox').addEventListener('change', function () {
+    const checkboxes = document.querySelectorAll('.product-card input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = this.checked;
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const closeIframeBtn = document.getElementById('closeIframeBtn');
     const overlay = document.getElementById('overlay');
@@ -14,6 +23,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-function openIframeBtn() {
+function checkout() {
     document.getElementById("overlay").style.display = "flex";
 }

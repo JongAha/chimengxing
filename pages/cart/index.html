@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>购物车</title>
+    <link rel="stylesheet" href="../../css/cart.css">
 </head>
+
 <body>
-    <h1>购物车</h1>
+    <div class="header">购物车</div>
+
+
+    <div class="product-card">
+        <div class="store-name">驰梦行专卖店</div>
+        <div class="product-info">
+            <div class="checkbox-container">
+                <input type="checkbox" id="productCheckbox">
+            </div>
+            <img src="../../imgs/car.png" alt="商品图片" class="product-image" />
+            <div class="product-details">
+                <div class="product-title">驰梦行电动车</div>
+                <div class="product-desc">订购后可享受D+3相应收益</div>
+                <div class="product-price">
+                    <span class="price">￥800</span>
+                    <span class="quantity">x1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="store-name">驰梦行专卖店</div>
+        <div class="product-info">
+            <div class="checkbox-container">
+                <input type="checkbox" id="productCheckbox">
+            </div>
+            <img src="../../imgs/car.png" alt="商品图片" class="product-image" />
+            <div class="product-details">
+                <div class="product-title">驰梦行电动车</div>
+                <div class="product-desc">订购后可享受D+3相应收益</div>
+                <div class="product-price">
+                    <span class="price">￥8000</span>
+                    <span class="quantity">x10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="store-name">驰梦行专卖店</div>
+        <div class="product-info">
+            <div class="checkbox-container">
+                <input type="checkbox" id="productCheckbox">
+            </div>
+            <img src="../../imgs/car.png" alt="商品图片" class="product-image" />
+            <div class="product-details">
+                <div class="product-title">驰梦行电动车</div>
+                <div class="product-desc">订购后可享受D+3相应收益</div>
+                <div class="product-price">
+                    <span class="price">￥80000</span>
+                    <span class="quantity">x100</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="select-all">
+            <input type="checkbox" id="selectAllCheckbox"><span style="margin-left: 5px;">全选</span>
+        </div>
+        <div class="footerRight">
+            <div class="total">合计：<span class="price">￥800.00</span></div>
+            <button class="checkout-btn" onclick="checkout()">结算</button>
+        </div>
+    </div>
+
+
+    <!-- 遮罩层 -->
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span id="closeIframeBtn" class="close-btn">&times;</span>
+            <iframe id="payPageIframe" src="../order/payPage.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="../../js/cart.js"></script>
 </body>
+
 </html>

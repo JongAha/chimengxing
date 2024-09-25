@@ -1,0 +1,136 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    width:100vw;
+    padding: 30px;
+    box-sizing: border-box;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 100%;
+    height: 10vh;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image-container img {
+    width: 20px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-text {
+    margin-top: 0px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 40vh;
+    padding: 10px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-image {
+    width: 50px;
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.rating-text {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.star.selected {
+    color: #ffcc00;
+}
+
+.share-and-submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.share-text {
+    font-size: 14px;
+    color: #999;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit-btn img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.submit-btn:hover {
+    background-color: #ff4500;
+}

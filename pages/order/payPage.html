@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订购商品页面</title>
+    <link rel="stylesheet" href="../../css/payPage.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">订购单</h1>
+        <p class="order-amount">订单金额：￥58000.00</p>
+        <div class="order-quantity">
+            <span class="gray-text quantityLeft">订购数量：</span>
+            <div class="quantity-control quantityRight">
+                <span class="triangle left" onclick="decreaseQuantity()">&#9664;</span>
+                <input type="text" id="quantity" value="1" readonly>
+                <span class="triangle right" onclick="increaseQuantity()">&#9654;</span>
+            </div>
+        </div>
+        <p class="gray-text">支付比例：</p>
+        <div class="payment-ratio">
+            <input type="text" placeholder="余额数量" id="balance" value="">
+            <img src="../../imgs/change-icon.png" alt="支付图标" class="payment-icon">
+            <input type="text" placeholder="积分数量" id="points" value="">
+        </div>
+        <div class="security-password">
+            <span class="gray-text passwordLeft">安全密码：</span>
+            <input class="passwordRight" name="password" type="password" placeholder="请输入支付密码" id="password">
+        </div>
+        <button class="submit-btn" onclick="submitOrder()">立即支付</button>
+        <p class="warning-text">温馨提示：订购后我们会与您签订线上/线下合同，请保持电话通畅！</p>
+    </div>
+    <script src="../../js/payPage.js"></script>
+</body>
+
+</html>
