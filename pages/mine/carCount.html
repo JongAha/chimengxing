@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的车辆展示</title>
+    <link rel="stylesheet" href="../../css/carCount.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="warning">您的正常合法权益，请及时签订相关合同！</div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="column image-column">
+                    <img src="../../imgs/car.png" alt="车辆图片">
+                </div>
+                <div class="column details-column">
+                    <p class="vehicle-name">驰梦行电动车</p>
+                    <p class="quantity">数量：x1 D+2享受收益</p>
+                </div>
+                <div class="column price-column">
+                    <p class="price">￥800.00</p>
+                </div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 55%;"></div>
+                <span class="progress-label">55%</span>
+            </div>
+
+            <div class="summary">
+                <span class="total">合计：1155.00</span>
+                <span class="earnings">累计运营收益：55.32</span>
+            </div>
+
+            <p class="timestamp">下单时间：2024-06-04 16:03:55</p>
+            <hr class="divider">
+
+            <div class="contract">
+                <span class="contract-title">《德烽科技购销合同》</span>
+                <button onclick="contractBtn(this)" class="contract-button" style="background-color: #059586;">已签订《查看》</button>
+            </div>
+            <div class="contract">
+                <span class="contract-title">《驰梦行固定资产委托管理合同》</span>
+                <button onclick="contractBtn(this)" class="contract-button" style="background-color: #059586;">已签订《查看》</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="column image-column">
+                    <img src="../../imgs/car.png" alt="车辆图片">
+                </div>
+                <div class="column details-column">
+                    <p class="vehicle-name">驰梦行电动车</p>
+                    <p class="quantity">数量：x10 D+2享受收益</p>
+                </div>
+                <div class="column price-column">
+                    <p class="price">￥5800.00</p>
+                </div>
+            </div>
+        
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 95%;"></div>
+                <span class="progress-label">95%</span>
+            </div>
+        
+            <div class="summary">
+                <span class="total">合计：13155.00</span>
+                <span class="earnings">累计运营收益：1755.32</span>
+            </div>
+        
+            <p class="timestamp">下单时间：2024-06-04 16:03:55</p>
+            <hr class="divider">
+        
+            <div class="contract">
+                <span class="contract-title">《德烽科技购销合同》</span>
+                <button onclick="contractBtn(this)" class="contract-button">去签订</button>
+            </div>
+            <div class="contract">
+                <span class="contract-title">《驰梦行固定资产委托管理合同》</span>
+                <button onclick="contractBtn(this)" class="contract-button">去签订</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/carCount.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提现页面</title>
+    <link rel="stylesheet" href="../../css/withdrawInfo.css">
+</head>
+
+<body>
+    <div class="header">
+        <button class="back-btn" onclick="goBack()">&#60; </button>
+        <div class="title" id="page-title">申请提现</div>
+    </div>
+
+    <h3 style="text-align: center;">提现信息填写</h3>
+    <hr class="divider">
+    
+    <div class="container">
+        <div class="form-row">
+            <label for="cardholder" class="label">持卡人名</label>
+            <input type="text" id="cardholder" class="input" placeholder="请输入持卡人名">
+        </div>
+        <hr class="divider">
+
+        <div class="form-row">
+            <label for="idCard" class="label">身份证号</label>
+            <input type="text" id="idCard" class="input" placeholder="请输入持卡人身份证">
+        </div>
+        <hr class="divider">
+
+        <div class="form-row">
+            <label for="cardNumber" class="label">卡号</label>
+            <input type="text" id="cardNumber" class="input" placeholder="请输入卡号">
+        </div>
+        <hr class="divider">
+
+        <div class="form-row">
+            <label for="bank" class="label">提现银行</label>
+            <input type="text" id="bank" class="input" placeholder="请输入银行">
+        </div>
+        <hr class="divider">
+
+        <div class="form-row">
+            <label for="branch" class="label">支行信息</label>
+            <input type="text" id="branch" class="input" placeholder="请输入支行银行">
+        </div>
+        <hr class="divider">
+
+        <div class="form-row verification-row">
+            <label for="captcha" class="label">验证码</label>
+            <input type="text" id="captcha" class="input" placeholder="请输入验证码">
+            <button id="sendCaptcha" class="captcha-button">发送验证码</button>
+        </div>
+        <hr class="divider">
+
+        <button id="submitButton" class="submit-button">立即提现</button>
+    </div>
+
+    <script src="../../js/withdrawInfo.js"></script>
+</body>
+
+</html>

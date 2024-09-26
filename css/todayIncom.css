@@ -1,0 +1,82 @@
+/* 基本样式重置 */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 顶部盒子样式 */
+.header {
+    border-top: 1px solid #ffdf36;
+    background-color: #ffdf36;
+    height: 25vh;
+    /* 占页面高度的1/4 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 40% 40%;
+}
+
+.total-earnings {
+    color: #000;
+}
+
+.earnings-title {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+}
+
+.earnings-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0;
+}
+
+/* 收益列表样式 */
+.earnings-list {
+    padding: 1rem;
+}
+
+/* 单个收益卡片样式 */
+.earnings-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 左侧收益信息 */
+.earnings-info {
+    flex: 2;
+}
+
+.earnings-type {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.earnings-time {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* 右侧收益金额 */
+.earnings-amount-positive {
+    flex: 1;
+    font-size: 1.5rem;
+    color: #28a745;
+    text-align: center;
+}

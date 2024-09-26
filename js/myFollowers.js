@@ -1,6 +1,6 @@
 function withdraw() {
-    // window.location.href = 'withdraw.html';
-    alert('Withdraw');
+    // window.top.location.href = `./index.html?title=${encodeURIComponent(title[index])}&url=${encodeURIComponent(url)}`;
+    window.top.location.href = `withdrawInfo.html`;
 }
 
 function navigateToCommunity() {

@@ -1,0 +1,109 @@
+/* 基本样式重置 */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.back-btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 0;
+    background-color: #ffffff;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 20px 10px 0px;
+    font-weight: 600;
+}
+
+
+/* 容器样式 */
+.container {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* 每一行样式 */
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+/* 标签样式 */
+.label {
+    flex: 1;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* 输入框样式 */
+.input {
+    flex: 3;
+    border: none;
+    /* border-bottom: 1px solid #ccc; */
+    padding: 8px;
+    font-size: 16px;
+}
+.input:focus {
+    outline: none;
+}
+
+/* 验证码按钮样式 */
+.verification-row {
+    align-items: center;
+}
+
+.captcha-button {
+    flex: 1;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.captcha-button:hover {
+    background-color: #e4e4e4;
+}
+
+/* 提交按钮样式 */
+.submit-button {
+    width: 100%;
+    background-color: #ffdf36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 5vh;
+}
+
+.submit-button:hover {
+    background-color: #e9cb31;
+}
+
+/* 分割线样式 */
+.divider {
+    width: 90%;
+    border: 1px solid #ededed;
+    margin: 15px auto;
+}

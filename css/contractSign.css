@@ -1,0 +1,95 @@
+
+/* 基本样式重置 */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.back-btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 0;
+    background-color: #ffffff;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 20px 10px 0px;
+    font-weight: 600;
+}
+
+/* 提现页面容器样式 */
+.contract-container {
+    width: 90%;
+    box-sizing: border-box;
+    /* max-width: 480px; */
+    margin: 50px auto;
+    /* padding: 20px; */
+    background-color: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+
+/* 输入组样式 */
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: start;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 60px);
+    padding: 10px 15px 10px 40px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ffdf36;
+}
+
+
+/* 提交按钮样式 */
+.submit-btn {
+    margin-top: 40px;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffdf36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #d5b92b;
+}
