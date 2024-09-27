@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.querySelector('.toggle-button');
     toggleButton.addEventListener('click', function () {
         // 添加切换功能代码
-        alert('切换按钮被点击！');
+        window.top.location.href = `changeAccount.html`;
     });
 });
 

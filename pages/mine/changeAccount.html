@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账号切换</title>
+    <link rel="stylesheet" href="../../css/changeAccount.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <button class="back-btn" onclick="goBack()">&#60; </button>
+        <div class="title" id="page-title">切换账号</div>
+    </div>
+
+    <div class="header-text-container">
+        <p class="header-text">轻触头像以切换账号</p>
+    </div>
+
+    <div class="container">
+        <div class="card" onclick="switchAccount(1)">
+            <div class="row">
+                <div class="column avatar-column">
+                    <img src="../../imgs/head.jpg" alt="头像">
+                </div>
+                <div class="column details-column">
+                    <p class="nickname">幸福人生</p>
+                    <p class="phone">18203493242</p>
+                </div>
+                <div class="column status-column">
+                    <p class="status">当前使用</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="switchAccount(2)">
+            <div class="row">
+                <div class="column avatar-column">
+                    <img src="../../imgs/head_2.png" alt="头像">
+                </div>
+                <div class="column details-column">
+                    <p class="nickname">美好生活</p>
+                    <p class="phone">17852324632</p>
+                </div>
+                <div class="column status-column">
+                    <p class="status"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-text">正在切换...</div>
+    </div>
+
+    <script src="../../js/changeAccount.js"></script>
+</body>
+
+</html>

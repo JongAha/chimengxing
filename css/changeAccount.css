@@ -1,0 +1,122 @@
+/* 基本样式重置 */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #ececec;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ececec;
+}
+
+.back-btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 0;
+    background-color: #ececec;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px 20px 10px 0px;
+    font-weight: 600;
+}
+
+/* 顶部盒子样式 */
+.header-text-container {
+    /* background-color: #ffdf36; */
+    /* 背景色 */
+    height: 20vh;
+    /* 盒子高度为视口高度的一半 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 24px;
+    color: #333;
+}
+
+/* 容器样式 */
+.container {
+    padding: 20px;
+}
+
+/* 卡片样式 */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* 行样式 */
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* 列样式 */
+.column {
+    flex: 1;
+}
+
+.avatar-column img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.avatar-column {
+    flex: 1;
+}
+.details-column {
+    flex: 3;
+}
+.status-column {
+    flex: 1;
+    text-align: right;
+}
+
+/* 文字样式 */
+.phone {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.nickname{
+    margin-top: 0;
+}
+
+.status {
+    color: rgb(12, 192, 12);
+    /* 当前使用的字体颜色 */
+}
+
+/* 遮罩层样式 */
+.overlay {
+    display: none;
+    /* 默认隐藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 10;
+}
